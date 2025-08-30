@@ -25,7 +25,7 @@ yolo-webcam-detection/
 ## 🔽 Download Weights
 Due to GitHub file size limits, the **YOLOv3 weights** must be downloaded separately:  
 
-➡️ [Download yolov3.weights from Google Drive](https://drive.google.com/your-link-here)  
+➡️ [Download yolov3.weights from Google Drive](https://drive.google.com/file/d/1t6yT_IgiK9iCl9vMcyYulBLW8cbWTsaL/view?usp=drive_link)  
 
 After downloading, place the file inside the project folder.
 
