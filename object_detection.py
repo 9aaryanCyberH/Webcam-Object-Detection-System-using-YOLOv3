@@ -61,12 +61,14 @@ while True:
 
     # Draw boxes and labels
     if len(indexes) > 0:
-        for i in indexes.flatten():
-            x, y, w, h = boxes[i]
-            label = str(classes[class_ids[i]])
-            confidence = confidences[i]
-            color = colors[class_ids[i]]
+      if len(indexes) > 0:
+    for i in indexes:
+        i = i[0] if isinstance(i, (list, tuple, np.ndarray)) else i
+        x, y, w, h = boxes[i]
+        label = str(classes[class_ids[i]])
+        confidence = confidences[i]
+        color = colors[i]
+        cv2.rectangle(frame, (x, y), (x + w, y + h), color, 2)
+        cv2.putText(frame, f"{label} {confidence:.2f}", (x, y + 20), font, 2, color, 2)
 
-            cv2.rectangle(frame, (x, y), (x + w, y + h), color, 2)
-            cv2.putText(frame, f"{label} {confidence:.2f}",
-                        (x, y - 10), cv2.FONT_H_
+
