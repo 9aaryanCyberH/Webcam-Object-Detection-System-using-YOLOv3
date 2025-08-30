@@ -1,7 +1,0 @@
-├── yolo-coco/
-│   ├── coco.names       # List of class labels (80 classes)
-│   ├── yolov3.cfg       # Model configuration
-│   └── yolov3.weights   # Pre-trained weights (not included, see below)
-├── object_detection.py  # Main Python script
-├── requirements.txt     # Required Python libraries
-└── README.md            # Project documentation
